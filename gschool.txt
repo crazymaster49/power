@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{ text-align: center;
+background: rgb(149, 194, 215);
+}
+</style>
+<body>
+
+<h2>Calculate your base and exponent</h2>
+
+<button onclick="document.write(power(base, exponent))">Total</button>
+
+</body>
+<script>
+var base = prompt("Base Number","5")
+var exponent = prompt("Exponent number", "5")
+function power(base, exponent) {
+  if (exponent == undefined)
+  exponent = 2;
+  var result = 1;
+  for (var count = 0; count < exponent; count++)
+  result *= base;
+  return result; }
+
+
+</script>
+</html>
